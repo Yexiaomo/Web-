@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>044-JS实现放大镜特效</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+  <div id="mainDiv" class="wrapper">
+
+    <!-- 小图片盒子 -->
+    <div id="smallDiv" class="smallBox">
+      <div id="magn" class="floatBox"></div><!-- 放大镜 -->
+      <div id="mark" class="markBox"></div>
+      <img src="images/p0.png">
+    </div>
+    <!-- 大图片盒子 -->
+    <div id="bigDiv" class="bigBox">
+      <img id="bigPic" src="images/p1.png">
+    </div>
+  <!-- 
+      这里请注意, 大图片盒子 bigDiv
+      它的宽高不是随意设定的,而是由smallDiv(正好放下p0图片)、放大镜magn和图片p1的像素大小决定的
+      公式为 
+        smallDix.width\p1.width = magn.width\bigDiv.width
+      高度同理求得
+   -->
+  </div>
+</body>
+</html>

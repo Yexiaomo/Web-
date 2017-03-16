@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>014-CSS3旋转动画</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <!--这段JS代码是为了让 figure,figcaption兼容 IE7,8-->
+  <script type="text/javascript">
+    (function(){ 
+      document.createElement('figcaption');
+      document.createElement('figure');
+      } 
+    )(); 
+  </script>
+  <!-- 
+    本段js代码仅仅是为了检测浏览器是否影响页面效果
+    不必理会
+  -->
+  <script type="text/javascript">  
+    var userAgent = navigator.userAgent,   
+    rMsie = /(msie\s|trident.*rv:)([\w.]+)/;
+    var ua = userAgent.toLowerCase();  
+    function uaMatch(ua) {  
+        var match = rMsie.exec(ua);  
+        if (match != null) {  
+            return { browser : "IE", version : match[2] || "0" };  
+        }   
+        if (match != null) {  
+            return { browser : "", version : "0" };  
+        }  
+    }  
+    var browserMatch = uaMatch(userAgent.toLowerCase());  
+    if (browserMatch.browser) {  
+      var version = browserMatch.version;
+      if(version<=9){
+        alert("温馨提示：您的浏览器版本过低，请下载最新谷歌、火狐等浏览器的最新版本！");
+        window.opener=null;
+        window.open('','_self');
+        window.close();
+      }
+    }  
+  </script>
+</head>
+<body>
+  <figure class="test1">
+    <img src="images/014.jpg"/>
+    <figcaption>
+      <h3>旋转动画</h3>
+      <p>在图片上移动鼠标</p>
+      <div></div>
+    </figcaption>
+  </figure>
+</body>
+</html>

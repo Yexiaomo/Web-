@@ -1,0 +1,119 @@
+*{
+  margin: 0;padding: 0
+}
+body{
+  background-color:#eee;
+}
+
+h1{
+  text-align:center;
+}
+
+.container{
+  width: 1120px;
+  height: 500px;
+  margin:60px auto; 
+  position:relative;
+}
+
+.container img{
+  padding:10px 10px 15px; 
+  background:white; 
+  border:1px solid #ddd; 
+  box-shadow:2px 2px 3px rgba(50, 50, 50, 0.4);
+  -webkit-transition:all 0.5s ease-in;
+  -moz-transition:all 0.5s ease-in;
+  -ms-transition:all 0.5s ease-in;
+  -o-transition:all 0.5s ease-in;
+  transition:all 0.5s ease-in; 
+  position:absolute; 
+  z-index:1;
+}
+
+.container img:hover{
+  box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); 
+  -webkit-box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); 
+  -moz-box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); 
+  -ms-box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); 
+  -o-box-shadow:15px 15px 20px rgba(50, 50, 50, 0.4); 
+  transform:rotate(0deg) scale(1.20); 
+  -webkit-transform:rotate(0deg) scale(1.20); 
+  -moz-transform:rotate(0deg) scale(1.20); 
+  -o-transform:rotate(0deg) scale(1.20); 
+  -ms-transform:rotate(0deg) scale(1.20); 
+  z-index:2;
+}
+.p1{
+  left: 400px; 
+  top: 0; 
+  -webkit-transform: rotate(-5deg); 
+  -moz-transform: rotate(-5deg); 
+  transform: rotate(-5deg);
+}
+.p2{
+  top: 80px; 
+  left: 600px; 
+  -webkit-transform: rotate(-20deg); 
+  -moz-transform: rotate(-20deg); 
+  transform: rotate(-20deg);
+}
+.p3{
+  bottom: 0; 
+  right: 0; 
+  -webkit-transform: rotate(5deg); 
+  -moz-transform: rotate(5deg); 
+  transform: rotate(5deg);
+}
+.p4{
+  bottom:0; 
+  left:300px; 
+  -webkit-transform: rotate(-10deg); 
+  -moz-transform: rotate(-10deg); 
+  transform: rotate(-35deg);
+}
+.p5{
+  bottom: 0; 
+  left: 0; 
+  -webkit-transform: rotate(-10deg); 
+  -moz-transform: rotate(-10deg); 
+  transform: rotate(-10deg);
+}
+.p6{
+  top: 0; 
+  left:0; 
+  -webkit-transform: rotate(10deg); 
+  -moz-transform: rotate(10deg); 
+  transform: rotate(10deg);
+}
+.p7{
+  top: 0; 
+  left: 850px; 
+  -webkit-transform: rotate(20deg); 
+  -moz-transform: rotate(20deg); 
+  transform: rotate(20deg);
+}
+.p8{
+  bottom: -70px; 
+  right: 630px; 
+  -webkit-transform: rotate(5deg); 
+  -moz-transform: rotate(5deg); 
+  transform: rotate(5deg);
+}
+.p9{
+  bottom: -60px;
+  left: 550px; 
+  -webkit-transform: rotate(15deg); 
+  -moz-transform: rotate(15deg); 
+  -ms-transform: rotate(15deg); 
+  -o-transform: rotate(15deg); 
+  transform: rotate(15deg);
+}
+.p10{
+  left:180px; 
+  top:-30px; 
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg); 
+  -moz-transform: rotate(-10deg); 
+  -ms-transform: rotate(-10deg); 
+  -o-transform: rotate(-10deg); 
+}

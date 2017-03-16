@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>008-HTML+CSS3引用css文件</title>
+	<meta charset="utf-8">
+  <!--链接式,从外部引入CSS样式 现在最流行的-->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <!--嵌入式 CSS样式-->
+  <style type="text/css">
+    .p_text{
+      font-size:30px;
+    }
+    .p_text1{
+      background-color: red;
+    }
+    .p_text2{
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <p class="p_text p_text1">第一段</p>
+  <p class="p_text p_text2">第二段</p>
+  <p class="p_text p_text3" style="font-size:60px; background-color:yellow;">第三段</p><!--行内式 CSS样式-->
+</body>
+</html>

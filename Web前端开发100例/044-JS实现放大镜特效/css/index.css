@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  display: block;
+  width: 533px;
+  height: 280px;
+  margin: 50px;
+  position: relative;
+  border: 1px solid #ccc;
+}
+.markBox{
+  position: absolute;
+  display: block;
+  width: 533px;
+  height: 280px;
+  background-color: #fff;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  z-index: 10;
+}
+.smallBox{
+  position: relative;
+  z-index: 1;
+}
+.floatBox{
+  display: none;
+  width: 160px;
+  height: 120px;
+  position: absolute;
+  background: #2ea8e4;
+  border: 1px solid #ccc;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+.bigBox{
+  display: none;
+  top: 0;
+  left: 600px;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  z-index: 1;
+  position: absolute;
+}
+#bigPic{
+  position: absolute;
+  z-index: 5;
+}

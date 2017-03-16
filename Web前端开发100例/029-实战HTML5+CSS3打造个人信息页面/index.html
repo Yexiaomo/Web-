@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>029-实战HTML5+CSS3打造个人信息页面</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- 
+    本段js代码仅仅是为了检测浏览器是否影响页面效果
+    不必理会
+  -->
+  <script type="text/javascript">  
+    var userAgent = navigator.userAgent,   
+    rMsie = /(msie\s|trident.*rv:)([\w.]+)/;
+    var ua = userAgent.toLowerCase();  
+    function uaMatch(ua) {  
+        var match = rMsie.exec(ua);  
+        if (match != null) {  
+            return { browser : "IE", version : match[2] || "0" };  
+        }   
+        if (match != null) {  
+            return { browser : "", version : "0" };  
+        }  
+    }  
+    var browserMatch = uaMatch(userAgent.toLowerCase());  
+    if (browserMatch.browser) {  
+      var version = browserMatch.version;
+      if(version<=8){
+        alert("温馨提示：您的浏览器版本过低，请下载最新谷歌、火狐等浏览器的最新版本！");
+        window.opener=null;
+        window.open('','_self');
+        window.close();
+      }
+    }  
+  </script>
+  <!--这里为了触发bootstrap的响应式导航,需要要调用一下 bootstrap的 JS脚本-->
+  <!--具体效果可以将浏览器窗口缩小,观察导航栏的变化-->
+  <!--两个JS顺序不能错-->
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+  <!--Navigation(导航)-->
+  <!--添加 bootstrap 类-->
+  <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+      <div class="navbar-header">
+        <button type="button" class="nav navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span><!--切换导航-->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand topnav" href="https://github.com/Yexiaomo" target="_blank">Yexiaomo</a>
+      </div>
+      <!--我自己的导航链接-->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#profile">PROFILE</a></li>
+          <li><a href="#club">CLUB</a></li>
+          <li><a href="#myclass">MYCLASS</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+
+  <!-- home -->
+  <a name="home"></a>
+  <div class="intro-header">
+    <div class="bg-overlay">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="intro-message">
+
+              <h1>Imcainiao</h1>
+              <h3>Endure loneliness</h3>
+              <hr class="intro-divider">
+              <ul class="list-inline intro-social-buttons">
+                <li>
+                  <a href="http://codepen.io/Yexiaomo/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i><span class="network-name">CodePen</span></a>
+                </li>
+                <li>
+                  <a href="https://github.com/Yexiaomo" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                </li>
+                <li>
+                  <a href="http://blog.csdn.net/qq_32603745" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-csdn fa-fw"></i> <span class="network-name">Blog</span></a>
+                </li>
+                <li>
+                  <a href="https://www.freecodecamp.cn/yexiaomo" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+  </div>
+  <!-- /.intro-header -->
+
+  <!-- Page Content (页面) -->
+  <a name="profile"></a>
+  <div class="content-section-a">
+    <div class="bg-overlay2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-sm-6">
+            <div class="clearfix"></div>
+            <h2 class="section-heading">Personal Skills</h2>
+            <br/>
+            <p class="lead">I'm<a href="https://www.freecodecamp.cn/yexiaomo">Yexiaomo</a><br/>
+                I am a rookie 15 software engineering
+                Master degree of professional courses:<br/>
+                English:60%<br/>
+                C: 4%<br/>
+                C#: 1.2%<br/>
+                Java: 2.3%<br/>
+                HTML&HTML5: 30%<br/>
+                CSS&CSS3: 20% <br/>
+                JavaScript: 5.5%<br/>
+                liunx: 1%<br/>
+                MySQL: 1.1%<br/>
+                SQLServer:0.5%<br/>
+                datastruct&algorithm:1.5%<br/>
+                <p>Never underestimate your power to change yourself<br/>
+            </p>
+          </div>
+          <div class="col-lg-5 col-lg-offset-2 col-sm-6 collapse navbar-collapse">
+            <img id="cat_p" class="img-circle img-responsive" src="images/cat.jpeg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Club -->
+  <a  name="club"></a>
+    <div class="club-bg-img">
+      <div class="bg-overlay">
+        <div class="container">         
+            <div class="row">      
+                <div class="col-lg-6">
+                  <div class="intro-message">
+                        <h1 style="text-align:center">C l u b</h1>
+                        <h3 style="text-align:center">Where Awesomeness Is Brought To Life.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+      </div>
+    </div>
+
+  <!-- myclass -->
+  <a  name="myclass"></a>
+    <div class="banner">
+      <div class="bg-overlay4">
+        <div class="container">         
+            <div class="row">
+                <div class="col-lg-15">
+                  <h2><span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</span>I love My Class, because she gives me happiness, warm of home</h2>
+                </div>
+              </br>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="list-inline">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+                <a href="#profile">Profile</a>
+            </li> 
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+                <a href="#club">Club</a>
+            </li>
+            <li class="footer-menu-divider">&sdot;</li>
+            <li>
+                <a href="#myclass">MyClass</a>
+            </li>
+          </ul>
+          <p>Written and code by <a href="https://www.freecodecamp.cn/yexiaomo" target="_blank">Yexiaomo</a><br/>
+          <a href="mailto:qq2339836652@163.com">e-mail: qq2339836652@163.com</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

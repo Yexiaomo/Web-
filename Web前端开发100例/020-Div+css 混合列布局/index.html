@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>020-Div+css 混合列布局</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <style type="text/css">
+    body{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 30px;
+    }
+    .top{
+      height: 100px;
+    }
+    .head, .main{
+      width: 960px;
+      margin: 0 auto;
+    }
+    .head{
+      background-color: red;
+      height: 100px;
+    }
+    .left{
+      background-color: gray;
+      width: 200px;
+      height: 500px;
+      float: left;
+    }
+    .right{
+      background-color: #FCC;
+      width: 700px;
+      float: right;
+    }
+    .right_left{
+      background-color: green;
+      width: 350px;
+      height: 500px;
+      float: left;
+    }
+    .right_right{
+      background-color: blue;
+      width: 350px;
+      height: 500px;
+      float: right;
+    }
+    .footer{
+      margin-bottom: 0;
+      background-color: pink;
+      width: 100%;
+      height: 60px;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <div class="head">Head</div>
+  </div>
+  <div class="main">
+    <div class="left">Left</div>
+    <div class="right">
+      <div class="right_left">Right_left</div>
+      <div class="right_right">Right_right</div>
+    </div>
+  </div>
+  <div class="footer">Footer</div></body>
+</html>

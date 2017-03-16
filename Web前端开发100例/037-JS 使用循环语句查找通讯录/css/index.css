@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h4{
+  margin-left: 14px;
+}
+button{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  margin-left: 218px;
+  padding: 8px 44px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+}
+.box ul{
+  list-style: none;
+  margin-left: 20px;
+}
+.content{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 760px;
+  height: 800px;
+  line-height: 40px;
+  font-family: "微软雅黑";
+  position: relative;
+  background-color: #eee;
+}
+.box span{
+  color:red;
+}
+.box p{
+  margin-left: 25px;
+}
+.case ul{
+  margin-left: 40px;
+}
+#end ul{
+  list-style: none;
+  margin-left: 40px;
+}

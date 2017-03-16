@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>042-使用jQuery修改整个页面</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+ 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  
+  <!-- 
+    本段js代码仅仅是为了检测浏览器是否影响页面效果
+    不必理会
+  -->
+  <script type="text/javascript">  
+    var userAgent = navigator.userAgent,   
+    rMsie = /(msie\s|trident.*rv:)([\w.]+)/;
+    var ua = userAgent.toLowerCase();  
+    function uaMatch(ua) {  
+        var match = rMsie.exec(ua);  
+        if (match != null) {  
+            return { browser : "IE", version : match[2] || "0" };  
+        }   
+        if (match != null) {  
+            return { browser : "", version : "0" };  
+        }  
+    }  
+    var browserMatch = uaMatch(userAgent.toLowerCase());  
+    if (browserMatch.browser) {  
+      var version = browserMatch.version;
+      if(version<=7){
+        alert("温馨提示：您的浏览器版本过低，请下载最新谷歌、火狐等浏览器的最新版本！");
+        window.opener=null;
+        window.open('','_self');
+        window.close();
+      }
+    }  
+  </script>
+
+
+  <script type="text/javascript" src="js/fun.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<h3 class="text-primary text-center">jQuery Playground</h3>
+		<div class="row">
+			<div class="col-xs-6">
+				<h4>#left-well</h4>
+				<div class="well" id="left-well">
+					<button class="btn btn-default target" id="target1">#target1</button>
+					<button class="btn btn-default target" id="target2">#target2</button>
+					<button class="btn btn-default target" id="target3">#target3</button>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<h4>#right-well</h4>
+				<div class="well" id="right-well">
+					<button class="btn btn-default target" id="target4">#target4</button>
+					<button class="btn btn-default target" id="target5">#target5</button>
+					<button class="btn btn-default target" id="target6">#target6</button>
+				</div>
+			</div>
+			<button class="btn" onclick="fun()">click Here</button>
+		</div>
+	</div>
+</body>
+</html>

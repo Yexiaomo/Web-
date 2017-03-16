@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>034-JS 使用random()在一个范围内生成随机数</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <script type="text/javascript">
+    /*
+      Math.random() 方法返回 介于 0（包含） ~ 1（不包含） 之间的一个随机数。
+      Math.floor()  方法返回 向下取整 获得它最近的整数。
+      getElementById() 方法是根据HTML的元素的 id 属性得到指定标签
+      通过 innerHTML 向指定标签内插入值
+    */
+    function fun() {
+    var n = Math.floor(Math.random()*10+1);
+    document.getElementById('getN').innerHTML = n;
+    }
+  </script>
+</head>
+<body>
+<p id="getN"></p>
+<button onclick="fun()">点击得到1~10以内的整数</button>
+</body>
+</html>

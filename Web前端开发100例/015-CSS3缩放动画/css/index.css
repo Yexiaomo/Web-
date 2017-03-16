@@ -1,0 +1,49 @@
+/*为了使图片更贴合,将所有标签的边距设为 0 */
+figure,figcaption {
+   display: block; 
+}
+body,figure,figcaption,h2,p,img{
+  margin: 0;
+  padding: 0;
+}
+figure{
+  position: relative;
+  width: 33%;
+  overflow: hidden;
+  height: 350px;
+  float: left;
+}
+figcaption{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "微软雅黑";
+}
+figure img{opacity: 0.8; transition: all 0.35s;}
+figure figcaption p,h3,div{
+  transition: all 0.35s;
+}
+.test1{background-color: #000}
+figure figcaption{width: 100%; height: 100%;}
+.test1 figcaption div{
+  border:2px solid #FFF;
+  width: 80%;
+  height:80%;
+  position: absolute;
+  top: 10%;
+  left: 10%; 
+  transform: scale(1.2,1.2);
+  opacity: 0;
+}
+figure figcaption h3{ margin-top: 30%; margin-left: 20%; opacity: 0;}
+figure figcaption p{ margin-top: 6%; margin-left: 20% ; opacity: 0;}
+.test1:hover figcaption div{
+  transform: scale(1,1);
+  opacity: 1;
+}
+.test1:hover img{
+  opacity: 0.5;
+  transform: scale(1.2,1.2);
+}
+.test1:hover figcaption h3{transform: scale(1.1); opacity: 1;}
+.test1:hover figcaption p{transform: scale(1.1); opacity: 1;}

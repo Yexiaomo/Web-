@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>010-CSS通过使用Important覆盖所有其他样式</title>
+	<meta charset="utf-8">
+  <style type="text/css">
+    .blue-text{
+      color: blue;
+    }
+    /* 
+      CSS样式中行内样式优先级最高
+      但是嵌入式样式中,添加  '!important' 
+      此时这个属性的会覆盖class声明,行内样式等其余样式
+    */    
+    .pink-text{
+      color: pink !important;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="blue-text pink-text" style="text-align:center; color: orange;">010CSS通过使用Important覆盖所有其他样式</h1>
+</body>
+</html>

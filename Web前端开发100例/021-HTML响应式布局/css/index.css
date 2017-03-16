@@ -1,0 +1,36 @@
+/*为了使图片更贴合,将所有标签的边距设为 0 */
+figure,figcaption {
+   display: block; 
+}
+body,figure,figcaption,h2,p,img{
+  margin: 0;
+  padding: 0;
+}
+p{
+  color: #2196f3;
+  
+}
+figure{
+  position: relative;
+  width: 33%;
+  overflow: hidden;
+  height: 350px;
+  float: left;
+}
+figcaption{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-family: "微软雅黑";
+}
+
+/*下面就是使用媒体查询,在浏览器窗口变化时,设定 width 的值*/
+@media screen and (max-width: 600px){
+  figure{width: 100%};
+}
+@media screen and (min-width: 601px) and (max-width: 900px){
+  figure{width: 50%};
+}
+@media screen and (min-width: 901px){
+  figure{width: 33%};
+}

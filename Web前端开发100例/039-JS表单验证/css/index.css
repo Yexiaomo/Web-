@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+  
+  margin:0;
+  padding:0;
+  font-family:微软雅黑;   
+}
+.wrapper{
+  margin:0 auto;
+  width:1080px;
+  height:400px;
+  padding-left:30%;
+  padding-top:200px;
+}
+.vsb{
+  font-size:20px;
+  color:#333;
+  padding:10px 0 10px 0;
+  position:relative;
+    
+}
+input{
+  width:200px;
+  height:40px;
+  border:#B1B1B1 solid 1.5px;
+  padding-left:10px;
+  line-height:40px;
+  color:#B1B1B1;
+  font-size:15px; 
+}
+.marin{
+    margin-left: 20px;
+}
+.marinx{
+    margin-left: 20px;
+  width:90px;
+}
+.prefun{  
+  padding:5px 0 5px 120px;;
+  width:200px;    
+}
+.k{
+
+    width:50px;
+  height:20px;
+  background-color:#C30;
+  float:left;
+  padding:0 5px 0 5px;
+  text-align:center;
+  font-size:13px;
+  color:#fff;
+    list-style:none;
+}
+.kiss{
+  width:50px;
+  height:20px;
+  background-color:#CCC;
+  float:left;
+  padding:0 5px 0 5px;
+  text-align:center;
+  font-size:13px;
+  color:#fff;
+  list-style:none;
+}
+img{
+  width:100px;
+  height:40px;
+  position:relative;
+  
+  top:15px;
+      
+}
+.tuy{
+  width:200px;
+  height:50px;
+  background-color:#F60;
+  color:#fff;
+  font-size:15px;
+  margin:20px 0 0 80px;
+}
+#count{
+    display:inline;
+  color:#F00;
+  margin-left:110px;
+  font-size:14px;
+  visibility:hidden;
+}
+p{
+  font-size:15px;
+  color:#930;
+  position:absolute;
+  left:350px;
+  top:20px;
+  display:inline;     
+}
+.no{
+  background-image:url(../images/no.jpg);
+  width:16px;
+  height:21px;
+  display:inline-block;
+}
+.ok{
+  background-image:url(../images/ok.png);
+  width:12px;
+  height:12px;
+  display:inline-block;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>041-JS创建用于对象的模板</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+</head>
+<body>
+<script type="text/javascript">
+  //创建person对象及参数
+	function person(name, age, height, weight){
+		this.name = name;
+		this.age = age;
+		this.height = height;
+		this.weight = weight;
+	}
+  
+  //传入参数
+	var you = person("Yexiaomo", 20, 178, 60);
+	
+	//打印内容
+	document.write("The information is "+"Name: "+ name +" Age:"+" Height: "+height+" Weight: "+weight);
+
+</script>
+</body>
+</html>

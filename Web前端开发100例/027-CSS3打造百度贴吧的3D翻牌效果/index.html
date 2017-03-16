@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>027-CSS3打造百度贴吧的3D翻牌效果</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <!-- 
+    本段js代码仅仅是为了检测浏览器是否影响页面效果
+    不必理会
+  -->
+  <script type="text/javascript">  
+    var userAgent = navigator.userAgent,   
+    rMsie = /(msie\s|trident.*rv:)([\w.]+)/;
+    var ua = userAgent.toLowerCase();  
+    function uaMatch(ua) {  
+        var match = rMsie.exec(ua);  
+        if (match != null) {  
+            return { browser : "IE", version : match[2] || "0" };  
+        }   
+        if (match != null) {  
+            return { browser : "", version : "0" };  
+        }  
+    }  
+    var browserMatch = uaMatch(userAgent.toLowerCase());  
+    if (browserMatch.browser) {  
+      var version = browserMatch.version;
+      if(version<=9){
+        alert("温馨提示：您的浏览器版本过低，请下载最新谷歌、火狐等浏览器的最新版本！");
+        window.opener=null;
+        window.open('','_self');
+        window.close();
+      }
+    }  
+  </script>
+</head>
+<body>
+<div id="content">
+<ul>
+  <li>
+    <a href="#" target="_blank">
+      <div><img src="images/027_1.jpg"></div>
+      <div>
+        <h3>漩涡鸣人</h3>
+        <p>日本动漫《火影忍者》的主人公。火之国木叶忍者村的忍者，四代目火影波风水门和二代九尾人柱力漩涡玖辛奈之子，六道仙人次子阿修罗转世。刚出生时父母为保护村子而牺牲，并将强大的尾兽——九尾封印于鸣人体内。</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#" target="_blank">
+      <div><img src="images/027_2.jpg"></div>
+      <div>
+        <h3>日向雏田</h3>
+        <p>日向雏田是日本动漫《火影忍者》中的人物。火之国木叶隐村的忍者，木叶名门日向一族宗家的嫡长女，大筒木羽村的后代之一，拥有纯度极高的白眼，被舍人和大筒木一族的亡魂们称为“白眼的公主”。</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#" target="_blank">
+      <div><img src="images/027_3.jpg"></div>
+      <div>
+        <h3>蒙奇·D·路飞</h3>
+        <p>蒙奇·D·路飞是在漫画及改编动画《航海王》中登场的虚拟角色，男主角，草帽海贼团船长。由于他的标志性特征是一顶草帽，因此常被直接称呼为草帽小子或者草帽路飞。梦想是找到传说中的One Piece，成为海贼王。</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="#" target="_blank">
+      <div><img src="images/027_4.jpg"></div>
+      <div>
+        <h3>盒子先生</h3>
+        <p>Danbo是日本的盒子玩偶，出自漫画《四叶妹妹》的纸箱人——阿楞。Danbo是一只用废纸盒DIY出来的可爱玩偶，圆圆的眼睛和三角形的嘴巴，时刻露出无辜的表情，让人看到就心软啦！</p>
+      </div>
+    </a>
+  </li>
+</ul>
+</div>
+</body>
+</html> 

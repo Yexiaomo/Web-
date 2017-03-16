@@ -1,0 +1,46 @@
+body,ul,li{
+ margin:  0; 
+ padding: 0;
+ list-style: none;
+}
+body{
+  font-family: Arial;
+  font-size: 20px;
+}
+.wrap{
+  width: 70%;
+  height: 200px;
+  margin: 20px auto;
+  background: #fff;
+}
+.wrap h1 {
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+}
+.effect{
+  position: relative;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3),0px 0px 40px rgba(0,0,0,0.1) inset;
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.3),0px 0px 40px rgba(0,0,0,0.1) inset;
+  -moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.3),0px 0px 40px rgba(0,0,0,0.1) inset;
+  -o-box-shadow: 0px 1px 4px rgba(0,0,0,0.3),0px 0px 40px rgba(0,0,0,0.1) inset;
+}
+/*
+  在effect的前面和后面各加一个阴影,进行重叠,
+  因为 1 个阴影,效果不是很明显
+*/
+.effect:after,.effect:before{
+  content: '';
+  background: #f00;
+  position: absolute;
+  z-index: -1;
+  top: 50% ;
+  bottom: 0px;
+  left: 30px; /*两边距离大一些,让下边的弧度更明显*/
+  right: 30px;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  -o-box-shadow:0 0 20px rgba(0,0,0,0.8);
+  border-radius:100px/10px; /*设定弧度,100px/10px-->意思是水平方向是100px,垂直方向是 10px*/
+}

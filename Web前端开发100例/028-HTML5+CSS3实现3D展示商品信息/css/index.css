@@ -1,0 +1,123 @@
+/*
+    IE浏览器不支持transform类型
+    所以关于CSS3 动画类的案例
+    请使用谷歌,firefox,Opera等支持CSS3的浏览器
+    请使用这些浏览器的最新版本查看本案例
+    以便获取更好的视觉效果
+*/
+body{
+  font-family: Tahoma, Arial;
+}
+#content{
+  margin: 100px auto 0;
+}
+#content li, #content .wrapper, #content li img, #content li span{
+    width: 310px;
+    height: 100px;
+}
+#content li{
+    cursor: pointer;
+    -webkit-perspective: 4000px;
+    -moz-perspective: 4000px;
+    -ms-perspective: 4000px;
+    -o-perspective: 4000px;
+    width: 310px;
+    height: 100px;
+    float: left;
+    margin-left: 60px;
+    list-style:none;
+
+    /*box-shadow: 2px 2px 5px #888888;*/
+}
+#content .wrapper{
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform .6s;
+    -moz-transition: -webkit-transform .6s;
+    -ms-transition: -webkit-transform .6s;
+    -o-transition: -webkit-transform .6s;
+}
+#content li img{
+    top: 0;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    -webkit-transform: translateZ(50px);
+    -moz-transform: translateZ(50px);
+    -ms-transform: translateZ(50px);
+    -o-transform: translateZ(50px);
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+}
+#content  li span{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(236, 241, 244, 1)), color-stop(100%, rgba(190, 202, 217, 1)));
+    -webkit-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    -moz-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    -ms-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    -o-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    -webkit-transform: rotateX(-90deg) translateZ(50px);
+    -moz-transform: rotateX(-90deg) translateZ(50px);
+    -ms-transform: rotateX(-90deg) translateZ(50px);
+    -o-transform: rotateX(-90deg) translateZ(50px);
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    display: block;
+    top: 0;
+    text-align: left;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: 10px;
+    width: 290px;
+    height: 80px;
+    -webkit-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    -moz-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    -ms-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    -o-text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+}
+#content li span strong{
+    display: block;
+    margin: .2em 0 .5em 0;
+    font-size: 20px;
+    font-family: "Oleo Script";
+}
+#content li:hover .wrapper{
+    -webkit-transform: rotateX(95deg);
+    -moz-transform: rotateX(95deg);
+    -ms-transform: rotateX(95deg);
+    -o-transform: rotateX(95deg);
+}
+#content li:hover img{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+#content li:hover span{
+    -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}

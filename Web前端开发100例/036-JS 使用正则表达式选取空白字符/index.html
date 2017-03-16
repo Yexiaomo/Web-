@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>036-JS 使用正则表达式选取空白字符</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="content">
+  <h3>使用正则表达式选取空白字符</h3>
+  <div class="box">
+    <p>空白字符有 <span>" "</span> (空格符)、<span>\r</span>  (回车符)、<span>\n</span> (换行符)、<span>\t</span> (制表符) 和 <span>\f</span> (换页符)。</p>
+    <p>空白正则表达式类似于: <span>/\s+/g</span></p>
+    <p>想想下面这个字符串中有几个空格,然后点击按钮,看看是否和你想的一致</p>
+    <p>str = "I'm studing javascript and CSS3!"</p>
+    <button onclick="fun()"">按钮</button>
+    <p>空白字符个数: <span id="len">点击按钮,获取上面字符串中空白字符串的长度</span></p>
+  </div>
+</div>
+
+<script type="text/javascript">
+    var str = "I'm studing javascript and CSS3!"
+    var expression = /\s+/g;  //获取空白字符的正则表达式(需记忆)
+    function fun() {
+      document.getElementById('len').innerHTML = str.match(expression).length;
+    }
+  </script>
+</body>
+</html>

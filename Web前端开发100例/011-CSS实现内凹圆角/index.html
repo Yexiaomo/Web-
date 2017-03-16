@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>011-CSS实现内凹圆角</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  <style type="text/css">
+    body{margin: 0; padding: 0;}
+    .box{
+      width: 100px;
+      height: 89px;
+      margin: 0 auto;
+      margin-top: 40px;
+      /*利用径向渐变实现*/
+      background: radial-gradient(200px at 100px 100px, rgba(255, 255, 255, 0)  101px, #11b3e4 100px);
+    }
+  </style>
+  <!-- 
+    本段js代码仅仅是为了检测浏览器是否影响页面效果
+    不必理会
+  -->
+  <script type="text/javascript">  
+    var userAgent = navigator.userAgent,   
+    rMsie = /(msie\s|trident.*rv:)([\w.]+)/;
+    var ua = userAgent.toLowerCase();  
+    function uaMatch(ua) {  
+        var match = rMsie.exec(ua);  
+        if (match != null) {  
+            return { browser : "IE", version : match[2] || "0" };  
+        }   
+        if (match != null) {  
+            return { browser : "", version : "0" };  
+        }  
+    }  
+    var browserMatch = uaMatch(userAgent.toLowerCase());  
+    if (browserMatch.browser) {  
+      var version = browserMatch.version;
+      if(version<=9){
+        alert("温馨提示：您的浏览器版本过低，请下载最新谷歌、火狐等浏览器的最新版本！");
+        window.opener=null;
+        window.open('','_self');
+        window.close();
+      }
+    }  
+  </script>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
