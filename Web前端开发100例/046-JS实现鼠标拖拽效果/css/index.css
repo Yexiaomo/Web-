@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#draggable{ 
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 500px;
+  border: 1px solid #ccc;
+  background: #89d2de;
+  text-align: center;
+  cursor: move;  /*鼠标放上去,有移动效果*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;/*元素文字不可选中*/
+}
