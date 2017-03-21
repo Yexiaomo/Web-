@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "微软雅黑"
+}
+body{
+  background: #333;
+}
+.wrapper{
+  margin-top: 150px;
+}
+.textshow{
+  margin-top: 0px;
+  font-size: 30px;
+  color: #006780;
+}
+#endYearText{
+  font-size: 40px;
+  color: #0fb2da;
+}
+.show{
+  margin-top: 30px;
+}
+#showEndText{
+  font-size: 80px;
+  color:#882c08;
+}
