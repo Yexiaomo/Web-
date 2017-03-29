@@ -69,7 +69,7 @@ color: #000;
     padding-bottom: 50px;
     text-align: center;
     background-size: cover !important;
-    background: url("../images/bird.jpeg") no-repeat center center fixed;
+    background: url("../images/bird.jpg") no-repeat center center fixed;
 }
 .bg-overlay {
   background:rgba(0,0,0, 0.3);
@@ -156,7 +156,7 @@ hr .intro-divider {
 .content-section-a {
     padding: 50px 0;
     background-size: cover !important;
-    background: url("../images/work.jpeg") no-repeat center center fixed;
+    background: url("../images/work.jpg") no-repeat center center fixed;
     height: 781px;
 }
 .bg-overlay2 {
@@ -229,7 +229,7 @@ h2.section-heading {
 
 .banner {
     padding: 100px 0;
-    background: url('../images/classmates.jpeg') no-repeat center center fixed;
+    background: url('../images/classmates.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 755px;
 }
@@ -282,6 +282,6 @@ p.copyright {
 }
 .club-bg-img {
   color: black;
-  background: url("../images/colleagues.jpeg") no-repeat center center fixed;
+  background: url("../images/colleague.jpg") no-repeat center center fixed;
   background-size: cover;
 }
