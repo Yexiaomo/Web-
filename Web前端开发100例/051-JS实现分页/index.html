@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Yexiaomo">
+    <title>051-JS实现分页</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/paging.js"></script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="infoDiv">
+    <!-- 限定输入框内只能输入数字-->
+    <input id="iptPage" class="pageInfoInput" type="text" name="pageTotal" value="这里输入总页数" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" >
+    <button class="btnTotal" onclick="getPageInfo()">确认</button>
+  </div>
+  <div id="pageDiv"></div>
+</div>
+</body>
+</html>

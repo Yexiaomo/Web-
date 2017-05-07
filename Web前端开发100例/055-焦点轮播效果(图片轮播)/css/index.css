@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body{
+  padding: 30px;
+}
+#imgContainer{
+  width: 1280px;
+  height: 500px;
+  border: 3px solid #9c9c9c;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+#imgList{
+  width: 8960px;
+  height: 500px;
+  position: absolute;
+  z-index: 1;
+}
+#imgList img{
+  float: left;
+}  
+#imgButtons{
+  position: absolute;
+  height: 10px;
+  z-index: 2;
+  bottom: 20px;
+  left: 46%;
+}
+#imgButtons span{
+  cursor: pointer; 
+  float: left;
+  border: 1px solid #fff;
+  width: 10px;
+  height: 10px;
+  -moz-border-radius: 50%; /* Firefox */
+  -webkit-border-radius: 50%; /* Safari 和 Chrome */
+  border-radius: 50%;
+  background: #333;
+  margin-right: 8px;
+}
+#imgButtons .on{
+  background: #00e2c5;
+}
+#prevImg{
+  left: 30px;
+}
+#nextImg{
+  right: 30px;
+}
+.imgArrow{
+  cursor: pointer;
+  display: none;
+  line-height: 39px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 40%;
+  background-color: rgba(0,0,0,0.3);
+  /*IE8 以下不支持 rgba, 用滤镜来代替*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+  color: #fff;
+  z-index: 3;
+}
+.imgArrow:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+#imgContainer:hover .imgArrow{
+  display: block;
+}

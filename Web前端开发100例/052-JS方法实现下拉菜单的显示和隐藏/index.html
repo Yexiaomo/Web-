@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Yexiaomo">
+    <title>052-JS方法实现下拉菜单的显示和隐藏</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/menuHideDisplay.js"></script>
+</head>
+<body>
+  <div class="nav">
+    <ul>
+      <li><a href="#">网站首页</a></li>
+      <li onmouseover="showSub(this)" onmouseout="hideSub(this)">前端开发
+        <ul>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li onmouseover="showSub(this)" onmouseout="hideSub(this)">后端开发
+        <ul>
+          <li><a href="#">PHP</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">Python</a></li>
+        </ul>
+      </li>
+      <li onmouseover="showSub(this)" onmouseout="hideSub(this)">数据库
+        <ul>
+          <li><a href="#">MySQL</a></li>
+          <li><a href="#">Oracle</a></li>
+          <li><a href="#">MongoDB</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

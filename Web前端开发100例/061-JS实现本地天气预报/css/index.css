@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  height:100%;
+  background-position:center center;
+  background-attachment:fixed;
+  background-size:cover;
+  font-family: 'roboto';
+  background-repeat: no-repeat;
+}
+.dayWeather a{
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px 6px;
+  color: #fff;
+}
+.wheather-box {
+  color: #fff;
+  font-size: 50px;
+  background: #eee;
+  margin-top: 200px;
+}
+.left {
+  float: left;
+  width: 50%;
+}
+.right {
+  float: right;
+  width: 50%;
+}
+#chengshi {
+  margin-left: 60%;
+  padding: 20px;
+  font-size: 70px;
+}
+#wIcon {
+  margin-left: 66%;
+  padding: 20px;
+  font-size: 100px;
+}
+#wendu {
+  padding: 20px;
+  margin-left: 50%;
+  font-weight: 800;
+}
+#fengli {
+  margin-top: 100px;
+  margin-left: 10%;
+}
+#tianqi {
+  margin-left: 10%;
+  margin-top: 40px;
+}

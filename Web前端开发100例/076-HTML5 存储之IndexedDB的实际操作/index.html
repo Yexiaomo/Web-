@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="helulu">
+  <title>076-HTML5 存储之IndexedDB的实际操作</title>
+  <script type="text/javascript" src="js/index.js"></script>
+</head>  
+<body>
+  <button onclick="_create('user')">打开数据库</button>
+  <button onclick="_delete('user')">删除数据库</button><br /><br />
+  姓名：<input type="text" id="name"><br />
+  年龄：<input type="number" id="age" min=1><br />
+  性别：<br />
+  男：<input type="radio" id="nan" name="xb" value="male" checked>
+  女：<input type="radio" id="nv" name="xb" value="female"><br />
+      
+  <button onclick="_add()">添加数据</button>
+  <button onclick="_get()">获取数据</button><br />
+  <p id="display"></p>
+</body>  
+</html>  

@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: '微软雅黑';
+}
+.nav{
+  background-color: #EEE;
+  height: 40px;
+  width: 440px;
+  margin: 0 auto;
+}
+ul li{
+  list-style: none;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+  width: 100px;
+  margin-left: 5px;
+}
+a{
+  text-decoration: none;
+  color: #000;
+  display: block;
+  height: 40px;
+}
+a:hover{
+  background: #0091c0;
+  color: #FFF;
+}
+ul li ul li{
+  float: none;
+  background-color: #EEE;
+}
+ul li ul{
+  display: none;
+}

@@ -1,0 +1,7 @@
+body {
+  overflow:hidden;
+}
+#color {
+  position:absolute;
+  left:3000px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="helulu">
+  <title>074-HTML5 Web存储</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<div class="main">  
+    <label for="sitename">网站名(key)：</label>  
+    <input type="text" id="sitename" name="sitename" class="text"/>  
+    <br/>  
+    <label for="siteurl">网 址(value)：</label>  
+    <input type="text" id="siteurl" name="siteurl"/>  
+    <br/>  
+    <input type="button" onclick="save()" value="新增记录"/>  
+    <hr/>  
+    <label for="search_phone">输入网站名：</label>  
+    <input type="text" id="search_site" name="search_site"/>  
+    <input type="button" onclick="find()" value="查找网站"/>  
+    <p id="find_result"><br/></p>  
+</div>  
+<br/>  
+<div id="list">
+</div>
+</body>
+</html>

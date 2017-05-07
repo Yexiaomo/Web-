@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family:  '微软雅黑';
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.wrapper{
+  height: 180px;
+  width: 700px;
+}
+.infoDiv{
+  margin-top: 30px;
+  margin-left: 30px;
+  position: absolute;
+  left: 70px;
+}
+.pageInfoInput{
+  height: 20px;
+}
+.btnTotal{
+  height: 23px;
+  margin-left: 3px;
+  padding: 0 1.5px;
+}
+#pageDiv{
+  margin-top: 30px;
+  top: 50px;
+  position: absolute;
+  left: 20px;
+}
+a:hover, a:link, .pagingInfo{
+  border: 1px solid #DDD;
+  background: #F2F2F2;
+  margin: 2px;
+  padding: 2px;
+  font-size: 15px;
+  text-decoration: none;
+}
+a:hover{
+  border: 1px solid #E5E5E5;
+  background: #F9F9F9;
+}
+.current {
+  border: 1px solid #83E7E4;
+  background: #DFF9F8;
+  margin: 1px;
+  padding: 2px;
+  height: 22px;
+  color: #27CBC7;
+}
+.pagingInfo{
+  margin: 5px;
+  padding: 5px;
+  font-size: 15px;
+  height: 22px;
+  width: auto;
+}

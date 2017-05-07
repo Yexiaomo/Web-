@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="author" content="helulu">
+	<title>063-JS筛选功能的实现</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/shanxuan.js"></script>
+</head>
+ <body>
+	<div class="demo">
+		<div class="sx">
+			<span>分类1：</span>
+			<a rel="1" class="sx_child" name="aaa" href="javascript:;">1111</a>
+			<a rel="2" class="sx_child" name="aaa" href="javascript:;">2222</a>
+			<a rel="3" class="sx_child" name="aaa" href="javascript:;">3333</a>
+			<a rel="4" class="sx_child" name="aaa" href="javascript:;">4444</a>
+		</div>
+		<div class="sx">
+			<span>分类2：</span>
+			<a rel="1" class="sx_child" name="bbb" href="javascript:;">aaaa</a>
+			<a rel="2" class="sx_child" name="bbb" href="javascript:;">bbbb</a>
+			<a rel="3" class="sx_child" name="bbb" href="javascript:;">cccc</a>
+			<a rel="4" class="sx_child" name="bbb" href="javascript:;">dddd</a>
+		</div>
+		<div class="sx">
+			<span>分类3：</span>
+			<a rel="1" class="sx_child" name="ccc" href="javascript:;">一一</a>
+			<a rel="2" class="sx_child" name="ccc" href="javascript:;">二二</a>
+			<a rel="3" class="sx_child" name="ccc" href="javascript:;">三三</a>
+			<a rel="4" class="sx_child" name="ccc" href="javascript:;">四四</a>
+		</div>
+		<div class="sx">
+			<span>分类4：</span>
+			<a rel="1" class="sx_child" name="ddd" href="javascript:;">ⅠⅠ</a>
+			<a rel="2" class="sx_child" name="ddd" href="javascript:;">ⅡⅡ</a>
+			<a rel="3" class="sx_child" name="ddd" href="javascript:;">ⅢⅢ</a>
+			<a rel="4" class="sx_child" name="ddd" href="javascript:;">ⅣⅣ</a>
+		</div>
+		<div class="zj">
+			<span>删选结果：</span>
+			<p class="qcqb">清除全部</p>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$('.sx').sx({
+			nuv:".zj",//筛选结果
+			zi:"sx_child",//所有筛选范围内的子类
+			qingchu:'.qcqb',//清除全部
+			over:'on'//选中状态样式名称
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+#mainBox{
+  width: 658px;
+  height: 500px;
+  border: 1px #bbb solid;
+  position: relative;
+  overflow: hidden;
+  margin: 50px auto;
+}
+#content{
+  height: 2385px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/1.jpg) no-repeat repeat;
+}
+.scrollDiv{
+  width: 18px;
+  position: absolute;
+  top: 0;
+  background: #666;
+  border-radius: 10px;
+}
