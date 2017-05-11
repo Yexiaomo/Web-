@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#rectDemo {
+  fill: #05dfe8; /*填充颜色*/
+  stroke: #9a9292;/*边框颜色*/
+  stroke-width: 5;/*边框宽度*/
+}

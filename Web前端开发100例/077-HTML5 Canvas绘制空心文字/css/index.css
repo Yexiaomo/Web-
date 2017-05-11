@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#myCanvas {
+  margin: 50px;
+  border:1px solid #d3d3d3;
+}

@@ -9,9 +9,11 @@
  - parent 对象
 */
 /*
-  在运行时你会发现出现如下错误
+  在本地运行时你会发现出现如下错误
   > Uncaught DOMException: Failed to construct 'Worker': Script at '某路径下/demo_workers.js' cannot be accessed from origin 'null'.
   
+  修改方法
+  > 将本案例放在服务器下运行,即可成功运行
 */
 var w;
 function startWorker() {
