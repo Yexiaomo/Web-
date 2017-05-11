@@ -3,112 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="author" content="helulu">
+  <meta name="author" content="yexiaomo">
 	<title>070-JS实现刮刮乐</title>
-  <link rel="stylesheet" type="text/css" href="css/index.css">
-	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
- <body>
-	<div class="content">
-		<div class="middle-top" id="gua1">
-			<img id="bg2_img" src="images/guaguaka_word.png" style="width:295px;height:195px;">
-		</div>
-		<div class="middle-bottom">
-			<img id="gua1_img" src="images/gua_image.png" style="width:300px;height:160px;position:relative;z-index:10">
-			<canvas id="front" style="margin-left:8px;z-index:100;top:245px;position: absolute;background: url(images/aa.png);" width="285" height="141"></canvas>
-		</div>
-	</div>
-	 <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-	<script type="text/javascript">   
-	var gua = 1,re = 2;
-	var imgSrc = 'images/aa.png';
-	
-	$("img").load(function(){
-		var body_width = $(window).width();
-		var body_height = $(window).height();
-		$("#gua1_img").width(300).height(160);
-		var height = 141;
-		var width  = 285;
-		var bg2_width = $("#bg2_img").width();
-		var bg2_height = $("#bg2_img").height();
-		
-		$("#gua1").css({"margin-top":"20px"});
-
-		$("#notify").css({"margin-top":"200px"});
-		$("#nImg").width(300).height(101);
-		
-		$("#di").css({"margin-top":"50px"});
-		$("#di_img").width(414*0.7).height(24*0.7);
-
-
-		$("#gua").width(width/10).height(width/10);
-		$("#gua_div").css({"line-height":width/10+"px","width":width/10+"px","height":width/10+"px","margin-top":"-"+($("#gua").height())+"px","margin-left":$("#gua").height()+5+"px","font-size": $("#gua").height()/1.6+"px"});
-		$("#re").width(width/10).height(width/10);
-		$("#re_div").css({ "line-height":width/10+"px","width":width/10+"px","height":width/10+"px","margin-top":"-"+($("#gua").height())+"px","margin-left":$("#gua").height()+5+"px","font-size": $("#gua").height()/1.6+"px"});
-		var gua1_img_width = $("#gua1_img").width();
-		$("#front").css({"margin-top":0+"px","margin-left":8+"px"});
-		$("#bg").width("100%").height($(window).height()-1);
-		if(gua > 0){
-			bodys(height,width);
-		}
-	});
-	function bodys(height,width){
-		var img = new Image();         
-		var canvas = document.querySelector('canvas');         
-		canvas.style.position = 'absolute';           
-		img.addEventListener('load',function(e){  
-			var ctx;
-			var w = width, h = height;             
-			var offsetX = canvas.offsetLeft, offsetY = canvas.offsetTop;             
-			var mousedown = false;               
-			function layer(ctx){                 
-				ctx.fillStyle = 'gray';                 
-				ctx.fillRect(0, 0, w, h);             
-			}   
-			function eventDown(e){                 
-				e.preventDefault();                 
-				mousedown=true;             
-			}   
-			function eventUp(e){            
-				e.preventDefault();                 
-				mousedown=false;             
-			}               
-			function eventMove(e){                 
-				e.preventDefault();                 
-				if(mousedown){                     
-					if(e.changedTouches){                         
-						e=e.changedTouches[e.changedTouches.length-1];                     
-					}                     
-					var x = (e.clientX + document.body.scrollLeft || e.pageX) - offsetX || 0,                         
-					y = (e.clientY + document.body.scrollTop || e.pageY) - offsetY || 0;                     
-					with(ctx){                    
-						beginPath()                     
-						arc(x, y, 15, 0, Math.PI * 2);                         
-						fill();                     
-					}                
-				}             
-			}               
-			canvas.width=w;             
-			canvas.height=h; 
-			
-			canvas.style.backgroundImage='url('+img.src+')';              
-			ctx=canvas.getContext('2d');         
-			ctx.fillStyle='b9b9b9';             
-			ctx.fillRect(0, 0, w, h);
-
-			layer(ctx);               
-			ctx.globalCompositeOperation = 'destination-out';               
-			canvas.addEventListener('touchstart', eventDown);             
-			canvas.addEventListener('touchend', eventUp);             
-			canvas.addEventListener('touchmove', eventMove);             
-			canvas.addEventListener('mousedown', eventDown);             
-			canvas.addEventListener('mouseup', eventUp);             
-			canvas.addEventListener('mousemove', eventMove);       
-		});
-		
-		img.src = imgSrc;
-		(document.body.style);
-	}
-	</script>
- </body>
- </html>
+<body>
+	<div id="main">
+  <div class="msg">
+    <!--window.location.reload()刷新页面-->
+    <a href="javascript:void(0)" onClick="window.location.reload()">再来一次</a>
+  </div>
+  <div>
+     <canvas></canvas> <!--引入<canvas>-->
+  </div>
+</div>
+</body>
+</html>
