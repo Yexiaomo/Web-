@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="yexiaomo">
+  <title>081-HTML5 Video(视频)</title>
+</head>
+<body>
+<div style="text-align:center;">
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">大</button>
+  <button onclick="makeNormal()">中</button>
+  <button onclick="makeSmall()">小</button>
+  <br /> 
+  <video id="video1" width="420" style="margin-top:15px;">
+    <source src="medias/1.mp4" type="video/mp4" />
+    <source src="medias/1.ogg" type="video/ogg" />
+    您的浏览器不支持video元素
+  </video>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
