@@ -9,38 +9,9 @@
   <!--页面重置css采用 normalize.css v5.0.0-->
   <link rel="stylesheet" type="text/css" href="css/rest.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-  <!-- 
-    本段js代码仅仅是为了检测浏览器是否影响页面效果
-    不必理会
-  -->
-  <script type="text/javascript">  
-    var userAgent = navigator.userAgent,   
-    rMsie = /(msie\s|trident.*rv:)([\w.]+)/;
-    var ua = userAgent.toLowerCase();  
-    function uaMatch(ua) {  
-        var match = rMsie.exec(ua);  
-        if (match != null) {  
-            return { browser : "IE", version : match[2] || "0" };  
-        }   
-        if (match != null) {  
-            return { browser : "", version : "0" };  
-        }  
-    }  
-    var browserMatch = uaMatch(userAgent.toLowerCase());  
-    if (browserMatch.browser) {  
-      var version = browserMatch.version;
-      if(version<=8){
-        alert("温馨提示：您的浏览器版本过低，请下载最新谷歌、火狐等浏览器的最新版本！");
-        window.opener=null;
-        window.open('','_self');
-        window.close();
-      }
-    }  
-  </script>
 </head>
 <body>
 <div class="main-wrapper"><!-- main-wrapper结束 -->
-
   <header><!--页头开始-->
     <nav>
       <div class="logo"><a href="#">Yexiaomo</a></div>
@@ -63,9 +34,7 @@
       </div>
     </div>
   </header><!--页头结尾-->
-
   <div class="content"><!--内容开始-->
-
     <section class="green-section">
       <div class="wrapper"> 
         <div>
@@ -82,10 +51,7 @@
         </div>
       </div>
     </section>
-
-
     <section class="gray-section">
-
       <div class="article-preview">
         <div class="text-section">
           <div class="sub-heading">HTML5</div>
@@ -95,7 +61,6 @@
           <img src="images/p1.jpg">
         </div>
       </div>
-
       <div class="article-preview article-preview-plus">
         <div class="img-section">
           <img src="images/p2.jpg">
@@ -105,7 +70,6 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate rerum dolor sunt tenetur, fuga quia unde.</p>
         </div>
       </div>
-
       <div class="article-preview">
         <div class="text-section">
           <div class="heading">JavaScript</div>
@@ -115,10 +79,7 @@
           <img src="images/p3.jpg">
         </div>
       </div>
-
     </section>
-
-
     <section class="purple-section">
       <div class="wrapper">
         <!--上面一部分作为头部-->
@@ -129,7 +90,6 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet porro minima sapiente dolores qui exercitationem quidem molestias quas necessitatibus temporibus ratione quam, iure, magnam repellendus tenetur, sint veniam velit? Ipsam!
           </div>
         </div>
-
         <div class="car-group clearfix">
           <div class="card">
             <h3>标题一</h3>
@@ -158,8 +118,6 @@
         </div>
       </div>
     </section>
-
-
     <footer><!--页脚开始-->
       <ul class="share-group">
         <!-- 友情链接 -->
@@ -173,8 +131,6 @@
         &copy 叶晓默 - 2017/3/13
       </div>
     </footer><!--页脚结束-->  
-
 </div><!-- main-wrapper结束 -->
-
 </body>
 </html>

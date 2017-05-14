@@ -1,4 +1,3 @@
-
 function setCookie(cname,cvalue,exdays) {
   //创建一个Date()对象
 	var d = new Date();
