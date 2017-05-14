@@ -1,10 +1,3 @@
-function inIframe () {
-  try {
-    return window.self !== window.top;
-  } catch (e) { 
-    return true; 
-  }
-}
 //定义网页背景颜色列表
 var colors = ['#16a085', '#27ae60', '#2c3e50', '#f39c12', '#e74c3c', '#9b59b6', '#FB6964', '#342224', "#472E32", "#BDBB99", "#77B1A9", "#73A857"];
 //获得的名言 和 作者 的变量
@@ -26,14 +19,9 @@ function getQuote(){
     },
     url: 'https://andruxnet-random-famous-quotes.p.mashape.com/cat=',
     success: function(response) {
-      var r = JSON.parse(response);
-      currentQuote = r.quote;
-      currentAuthor = r.author;
-      if(inIframe())
-      {
-        $('#tweet-quote').attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=' + encodeURIComponent('"' + currentQuote + '" ' + currentAuthor));
-        $('#tumblr-quote').attr('href', 'https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption='+encodeURIComponent(currentAuthor)+'&content=' + encodeURIComponent(currentQuote));
-      }
+      // var r = JSON.parse(response);
+      currentQuote = response.quote;
+      currentAuthor = response.author;
       $(".quote-text").animate({
           opacity: 0
         }, 500,
@@ -41,7 +29,7 @@ function getQuote(){
           $(this).animate({
             opacity: 1
           }, 500);
-          $('#text').text(r.quote);
+          $('#text').text(response.quote);
         });
 
       $(".quote-author").animate({
@@ -51,7 +39,7 @@ function getQuote(){
           $(this).animate({
             opacity: 1
           }, 500);
-          $('#author').html(r.author);
+          $('#author').html(response.author);
         });
 
       var color = Math.floor(Math.random() * colors.length);
