@@ -25,6 +25,7 @@ function getCookie(cname){
 }
 
 function checkCookie(){
+	alert("您的浏览器需支持本地cookie存储,并且能正确读取,否则您将什么也看不到");
   //得到用户名
 	var user = getCookie("username");
 	/*

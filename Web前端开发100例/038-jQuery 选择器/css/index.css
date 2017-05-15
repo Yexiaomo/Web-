@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+}
+div {
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+span {
+  color:red;
+}
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+  font-size: 18px;
+  width: 150px;
+}

@@ -6,53 +6,19 @@
 	<title>038-jQuery 选择器</title>
   <meta name="author" content="Yexiaomo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript">
-    function fun(){
-        //选取标签直接写标签名
-        $("body").css({"background":"#eee","font-family":"微软雅黑"});
-        //选取某个 id ,需要加 ' # '
-        $("#setId").css("color","pink");
-        //选取某个 类, 需要加  ' . '
-        $(".setClass").css("display","none");
-    }
-  </script>
-  <style type="text/css">
-    *{
-      margin: 0;
-      padding: 0;
-      line-height: 40px;
-    }
-    div{
-      text-align: center;
-    }
-    ul{
-      list-style: none;
-    }
-    span{
-      color:red;
-    }
-    button{
-      background-color: #4CAF50;
-      border: none;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      padding: 5px;
-      display: inline-block;
-      font-size: 18px;
-    }
-  </style>
+  <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 <div>
   <h1>jQuery 选择器</h1>
-  <h3>这里简单列举选择  <span>标签</span> <span>id</span> <span>类名</span></h2>
+  <h3>这里简单列举选择 <span>标签</span> <span>id</span> <span>类名</span></h3>
   <ul>
     <li id="setId">我的背景色是粉红色</li>
     <li class="setClass">看我是不是不见了</li>
   </ul>
-  <button onClick="fun()">看看发生了什么点击</button>
+  <button onClick="fun()">点击</button>
 </div>
 </body>
 </html>
