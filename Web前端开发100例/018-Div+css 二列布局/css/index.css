@@ -1,0 +1,18 @@
+body {
+  text-align: center;
+  font-size: 30px;
+  padding: 0;
+  font-weight: bolder;
+}
+.left {
+  background-color: gray;
+  width: 300px;
+  height: 1000px;
+  float: left;
+}
+.right {
+  background-color: pink;
+  width: 300px;
+  height: 1000px;
+  float: right;
+}

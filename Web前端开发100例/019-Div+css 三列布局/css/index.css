@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding:0;
+  font-size: 30px;
+  text-align: center;
+}
+.left {
+  background-color: gray;
+  width: 200px;
+  height: 700px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.middle {
+  background-color: pink;
+  margin: 0 300px 0 300px;
+  height: 400px;
+}
+.right {
+  background-color: #e3ffcc;
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 200px;
+  height: 700px;
+}
