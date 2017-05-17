@@ -8,12 +8,10 @@
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <script type="text/javascript" src="js/index.js"></script>
 </head>
-<body>  
-  <h3>拖动飞机到垃圾桶后从DOM树中删除子元素</h3>  
-  <img id="trash" src="images/04.png">  
-  <hr/>  
-  <img id="p3" class="src" src="images/01.png">  
-  <img id="p4" class="src" src="images/02.png">  
-  <img id="p5" class="src" src="images/03.png">  
+<body>
+  <p>拖动  图片到矩形框中:</p>
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  <br/>
+  <img src="images/1.png" id="drag1" draggable="true" ondragstart="drag(event)" width="173" height="173"/>
 </body>
 </html>
