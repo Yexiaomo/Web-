@@ -63,7 +63,7 @@ function showWeather(showDay){
     });
   })
 }
-// 根据天气情况,设置页面背景
+// 根据天气情况,设置页面背景(所有天气的情况并没有列举完全)
 function setBgImg(status){
   switch(status){
     case 'zhenyu': $('#wIcon').html('<i class="wi wi-rain-mix"></i>');
