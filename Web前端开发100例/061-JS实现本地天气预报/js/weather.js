@@ -6,7 +6,18 @@ window.onload=function(){
   window.setInterval(showWeather,3600000);
 }
 function showWeather(showDay){
+  //设定字体颜色
+  for (var i = 0; i < 3; i++) {
+    if (i == showDay) {
+      document.getElementById("day"+i).style.color='red';
+    } else {
+      document.getElementById("day"+i).style.color='white';
+    }
+  }
+  
+  //定义变量
   var ch, wd, fl, tq;
+  //确定所在城市
   var cityUrl = 'http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js';
   $.getScript(cityUrl, function(script,textStatus,jqXHR) {
     //得到所在城市(转码后)
