@@ -83,7 +83,10 @@ function setBgImg(status){
       break;
     case 'leizhenyu':$('#wIcon').html('<i class="wi wi-storm-showers"></i>');
       $('body').css('background-image','url(images/leizhenyu.jpg)');
-      break;  
+      break;
+    case 'yin':$('#wIcon').html('<i class="wi wi-cloudy"></i>');
+      $('body').css('background-image','url(images/yintian.jpg)');
+      break;
     // case 'Snow雪':$('#wIcon').html('<i class="wi wi-snow"></i>');
     //   $('body').css('background-image','url(images/1.jpg)');
     //   break;
