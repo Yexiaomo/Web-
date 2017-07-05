@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Avenir Next','Lantinghei SC';
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+.wrap {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 10%;
+  background-image: url(../images/bk.jpg);
+  background-color: #333;
+  overflow:hidden;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -ms-perspective: 800px;
+  perspective: 800px;
+}
+/*海报样式*/
+.photo {
+  width: 260px;
+  height: 320px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+}
+.photo .side {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.photo .side-front {}
+.photo .side-front .image {
+  width: 100%;
+  height: 250px;
+  line-height: 250px;
+  overflow: hidden;  
+}
+.photo .side-front .image img {
+  width: 100%;
+}
+.photo .side-front .caption {
+  text-align: center;
+  font-size: 16px;
+  line-height: 50px;
+}
+.photo .side-back {}
+.photo .side-back .desc {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+/*当前选中海报样式*/
+.photo_center {
+  width: 260px;
+  height: 320px;
+  left: 50%;
+  top: 50%;
+  margin: -160px 0 0 -130px;
+  z-index: 999;
+}
+.photo-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;/*支持元素的3D效果*/
+  -webkit-transition: all 1.6s;
+  -o-transition: all 1.6s;
+  transition: all 1.6s;
+}
+.photo-wrap .side-front {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.photo-wrap .side-back {
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.photo-wrap .side {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden; /*当元素不面向屏幕时隐藏*/
+}
+.photo_front .photo-wrap {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+.photo_back .photo-wrap {
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+/*控制按钮样式*/
+.nav {
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  left: 10%;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+/*普通样式*/
+.nav .i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #bbb;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  -o-transform: scale(0.5);
+  transform: scale(0.5);
+  transition: all .5s;
+}
+/*控制按钮选中样式*/
+.nav .i_current {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  background-image: url(../images/current.png);
+}
+/*控制按钮背面样式*/
+.nav .i_back {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  background-color: #555;
+  background-image: url(../images/back.png);
+}
+/*翻转图片时往右边移动一下*/
+.photo {
+  left: 50%;
+  top: 50%;
+  margin: -160px 0 0 -130px;
+}
+.photo-wrap {
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  -o-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+}
+.photo_front .photo-wrap {
+  -webkit-transform: translate(0,0) rotateY(0deg);
+  -ms-transform: translate(0,0) rotateY(0deg);
+  -o-transform: translate(0,0) rotateY(0deg);
+  transform: translate(0,0) rotateY(0deg);
+}
+.photo_back .photo-wrap {
+  -webkit-transform: translate(260px,0) rotateY(180deg);
+  -ms-transform: translate(260px,0) rotateY(180deg);
+  -o-transform: translate(260px,0) rotateY(180deg);
+  transform: translate(260px,0) rotateY(180deg);
+}

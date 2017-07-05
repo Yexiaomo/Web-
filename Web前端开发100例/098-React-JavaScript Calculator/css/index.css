@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*设置 HTML 文档的背景色：*/
+:root {
+  /* color palette :: https://coolors.co/app/d63c6b-5cc8ff-efefef-292f36-d6d6d6 */
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(top left, #5cc8ff 0%, #d63c6b 100%);
+  background-image: linear-gradient(to bottom right, #5cc8ff 0%, #d63c6b 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body {
+  padding-top: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+button {
+  outline: none;
+  border: 0;
+  padding: 16px;
+  padding: 1rem;
+  background-color: #292f36;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #5cc8ff;
+  -webkit-transition: all 300ms cubic-bezier(1, 1, 1, 1);
+  transition: all 300ms cubic-bezier(1, 1, 1, 1);
+}
+button:hover {
+  color: #00a3f5;
+}
+button.block {
+  width: 100%;
+}
+button.transparent {
+  background-color: transparent;
+}
+button.no-padding {
+  padding: 0;
+}
+button.long-text {
+  font-size: 16px;
+  font-size: 1rem;
+}
+.react-calculator {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  box-shadow: 0 19px 38px rgba(19, 19, 19, .24), 0 15px 12px rgba(19, 19, 19, .12);
+}
+body::-webkit-scrollbar, .editable-field::-webkit-scrollbar, .memory-bank::-webkit-scrollbar {
+  width: 8px;
+  width: .5rem;
+}
+body::-webkit-scrollbar:horizontal, .editable-field::-webkit-scrollbar:horizontal, .memory-bank::-webkit-scrollbar:horizontal {
+  height: 8px;
+  height: .5rem;
+}
+body::-webkit-scrollbar-track,
+  body::-webkit-scrollbar:horizontal,
+  .editable-field::-webkit-scrollbar-track,
+  .editable-field::-webkit-scrollbar:horizontal,
+  .memory-bank::-webkit-scrollbar-track,
+  .memory-bank::-webkit-scrollbar:horizontal {
+  background-color: #131313;
+}
+body::-webkit-scrollbar-thumb,
+  body::-webkit-scrollbar:horizontal,
+  .editable-field::-webkit-scrollbar-thumb,
+  .editable-field::-webkit-scrollbar:horizontal,
+  .memory-bank::-webkit-scrollbar-thumb,
+  .memory-bank::-webkit-scrollbar:horizontal {
+  background-color: #d63c6b;
+}
+s
+  body:hover::-webkit-scrollbar-thumb,
+    s
+  body:hover::-webkit-scrollbar:horizontal,
+    s
+  .editable-field:hover::-webkit-scrollbar-thumb,
+    s
+  .editable-field:hover::-webkit-scrollbar:horizontal,
+    s
+  .memory-bank:hover::-webkit-scrollbar-thumb,
+    s
+  .memory-bank:hover::-webkit-scrollbar:horizontal {
+  background-color: #c41c4f;
+}
+.editable-field {
+  position: relative;
+  width: 320px;
+  height: 80px;
+  z-index: 10;
+  outline: none;
+  box-shadow: 0 4px 2px -2px rgba(19, 19, 19, .64);
+  padding: 8px;
+  padding: .5rem;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  background-color: rgba(19, 19, 19, .64);
+
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 2;
+  color: #d63c6b;
+  text-align: right;
+  direction: rtl;
+  white-space: nowrap;
+}
+.memory-bank {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  background-color: rgba(19, 19, 19, .64);
+  color: #00a3f5;
+  -webkit-transition: height 150ms cubic-bezier(1, 1, 1, 1),
+    overflow 1ms cubic-bezier(1, 1, 1, 1) 200ms,
+    padding 1ms cubic-bezier(1, 1, 1, 1) 200ms;
+            transition: height 150ms cubic-bezier(1, 1, 1, 1),
+    overflow 1ms cubic-bezier(1, 1, 1, 1) 200ms,
+    padding 1ms cubic-bezier(1, 1, 1, 1) 200ms;
+}
+.memory-bank .toggle-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 2px 5px;
+}
+.memory-bank .toggle-close .title {
+  display: inline-block;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.memory-bank.visible {
+  height: calc(100% - 80px);
+  padding: 10px;
+  overflow-y: auto;
+  -webkit-transition: height 200ms cubic-bezier(1, 1, 1, 1),
+      padding 1ms cubic-bezier(1, 1, 1, 1);
+  transition: height 200ms cubic-bezier(1, 1, 1, 1),
+      padding 1ms cubic-bezier(1, 1, 1, 1);
+}
+.button-set--functions,
+  .button-set--equations {
+  background-color: #292f36;
+}
+.button-set--functions button, .button-set--equations button {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  vertical-align: top;
+  text-transform: uppercase;
+  -webkit-font-feature-settings: "c2sc", "c2sc", "c2sc";
+  -moz-font-feature-settings: "c2sc", "c2sc", "c2sc";
+  font-feature-settings: "c2sc", "c2sc", "c2sc";
+  font-variant: small-caps;
+  color: #d63c6b;
+}
+.button-set--functions button:hover, .button-set--equations button:hover {
+  color: #c41c4f;
+}
+.button-set--numbers {
+  width: 240px;
+  float: left;
+  background-color: #292f36;
+}
+.button-set--numbers button {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  float: left;
+  background-color: #292f36;
+  -webkit-transition: box-shadow 300ms cubic-bezier(1, 1, 1, 1);
+  transition: box-shadow 300ms cubic-bezier(1, 1, 1, 1);
+}
+.button-set--numbers button:last-child {
+  width: 100%;
+}
+.button-set--functions {
+  clear: left;
+  float: left;
+  width: 240px;
+}

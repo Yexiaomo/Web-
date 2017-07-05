@@ -1,0 +1,22 @@
+* {
+  margin: 20;
+  padding: 0;
+}
+body {
+  padding: 20px;
+}
+#container {
+  background-color: #ddd;
+  width: 500px;
+  height: 250px;
+}
+path {
+  fill: none;
+  stroke: #4682b4;
+  stroke-width: 2;
+}
+/*可以把下面代码注释,看看坐标轴发生了什么变化*/
+.domain, .tick line {
+  stroke: gray;
+  stroke-width: 1;
+}

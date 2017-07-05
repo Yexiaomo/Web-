@@ -1,0 +1,138 @@
+html {
+  overflow-y: scroll;
+}
+body {
+  background-color: #f2f2f2;
+  overflow-x: hidden !important;
+}
+.head-bk {
+  background-color: #f2f2f2;
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 399px;
+}
+.container ul {
+  margin-top: 55px;
+  /*width: 100%;  */
+}
+.container ul li a{
+  margin-left: 35px;
+  color: #2eb1c7;
+  text-decoration: none;
+}
+.container ul li a:hover {
+  color: #fff;
+}
+/*快讯*/
+.news-container {
+  margin-top: 30px;
+  margin-left: 10%;
+}
+
+/*内容部分*/
+.main {
+  background-color: #fff;
+  margin-left: 10%;
+  margin-right: 18%;
+}
+.content {
+  margin-top: 45px;
+  padding: 0;
+  height: 200px;
+  width: 1050px;
+}
+.content .img-left {
+  display: inline;
+  float: left;
+  
+}
+.content-title h1 {
+  font-size: 22px;
+  padding-top: 12px;
+  display: inline-block;
+  margin: 9px 0px 0px 33px;
+}
+.content-title span {
+  float: right;
+}
+.content-text hr {
+  background-color: #8242C0;
+  height: 4px;
+  width: 55px;
+  display: inline-block;
+  margin: 0px 0px 0px 34px;
+}
+.content-text .content-p div {
+  display: inline-block;
+  width: 550px;
+  margin: 10px 0px 0px 34px;
+}
+.content-text .content-p div span{
+  float: right;
+}
+
+
+/*footer*/
+footer {
+  position: relative;
+  margin-top: 300px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+footer p {
+  margin-top: 10px;
+}
+/*第二个页面*/
+.collapse-container{
+  margin-top: 30px;
+  padding: 10px 15px;
+}
+.collapse-container span{
+  float: right;
+}
+.info-wrapper {
+  margin-top: 30px;
+}
+.info-wrapper a{
+  text-decoration: none;
+}
+.info-title .info-text {
+  padding: 10px;
+}
+.info-container {
+  display: none;
+  margin-top: 10px;
+  border: 1px #ddd solid;
+}
+.info-title {
+  text-align: center;
+  border-bottom: 1px #a0a0a0 dashed;
+}
+.info-text {
+  margin: 30px 30px;
+  font-size: 15px;
+  line-height: 30px;
+}
+/*技术沙龙*/
+.content-box {
+  margin-top: 80px;
+  line-height: 25px;
+}
+.content-box .content-box-img, .content-box .content-box-info{
+  margin: 0px 40px 0px 20px;
+}
+.content-box h3 {
+  color: #40AEE6;
+}
+/*组织团队*/
+.img-box {
+  display: inline-block;
+  text-align: center;
+  border: 1px #e3e3e3 solid;
+  margin-left: 10px;
+}
+.img-box:hover {
+  box-shadow: 2px 2px 4px rgba(50, 50, 50, 0.4);
+}

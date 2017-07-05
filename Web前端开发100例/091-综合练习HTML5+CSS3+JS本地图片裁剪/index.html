@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv=" X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="yexiaomo">
+  <title>091-综合练习HTML5+CSS3+JS本地图片裁剪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+  <input type="file" name="file" id="postFile">
+  <button id="saveButton">Save</button>
+  <div id="label">
+    <canvas id="getImg"></canvas>
+    <div>
+      <canvas id="coverBox"></canvas>
+      <canvas id="editPic"></canvas>
+    </div>
+  </div>
+  <div>
+    <span id="showEdit"></span>
+    <span id="showPic"><img src=""></span>
+    <button id="download">Download</button>
+  </div>
+  <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

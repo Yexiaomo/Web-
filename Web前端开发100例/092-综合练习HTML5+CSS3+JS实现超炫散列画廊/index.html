@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="yexiaomo">
+  <title>092-综合练习HTML5+CSS3+JS实现超炫散列画廊</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body onselect="return false;">
+  <!-- 模板字符串 -->
+  <div id="wrap" class="wrap">
+    <!-- photo 负责平移,旋转 -->
+    <div id="photo_{{index}}" class="photo photo_front" onclick="turn(this)">
+      <!-- photo-wrap 负责翻转 -->
+      <div class="photo-wrap">
+        <div class="side side-front">
+          <p class="image"><img src="images/{{img}}"></p>
+          <p class="caption">{{caption}}</p>
+        </div>
+        <div class="side side-back">
+          <p class="desc">{{desc}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

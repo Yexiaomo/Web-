@@ -1,0 +1,14 @@
+{
+  "name": "vue",
+  "version": "1.0.0",
+  "description": "使用vue实现购物车和地址选配",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "Yfling",
+  "license": "ISC"
+}

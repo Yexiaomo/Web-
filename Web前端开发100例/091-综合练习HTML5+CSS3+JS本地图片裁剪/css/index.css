@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  padding-top: 30px;
+}
+#label {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  height: 300px;
+  width: 300px;
+  margin: 20px auto;
+  position: relative;
+}
+#getImg {
+  position: absolute;
+}
+#editPic {
+  position: absolute;
+  display: none;
+  background: rgba(0,0,0,0);
+}
+#coverBox {
+  position: absolute;
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index:1000;
+}
+#showEdit {
+  margin: 0 auto;
+  display: inline-block;
+}
+#showPic {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #1aea0a;
+  overflow: hidden;
+  margin: 0 auto;
+  display: inline-block;
+} 
+#download {
+  display: none;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="yexiaomo">
+  <title>100-jQM WebApp–列车时刻表</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="index">
+  <!-- 
+      jQuery Mobile（简写为jQM） 的基本页面：导航栏、内容、页脚
+      HTML5 data-* 属性用于通过 jQM 为移动设备创建“对触控友好的”交互外观
+      详细内容可查阅相关资料
+   -->
+  <div data-role="header" data-position="fixed"><!-- 导航栏 -->
+    <h1>100-jQM WebApp–列车时刻表</h1>
+  </div>
+
+  <div role="main" class="ui-content"><!-- 内容 -->
+    <div class="ui-field-contain">
+      <label>发车站:</label>
+      <input type="text" name="text-basic" id="search-begin" value="">
+    </div>
+    <div class="ui-field-contain">
+      <label>终点站:</label>
+      <input type="text" name="text-basic" id="search-end" value="">
+    </div>
+    <div class="ui-field-contain">
+      <label>车次:</label>
+      <input type="text" name="text-basic" id="search-no" value="">
+    </div>
+    <input type="button" value="搜索" id="search-submit">
+    <ul data-role="listview" data-inset="true" id="list">
+    </ul>
+  </div>
+
+  <div data-role="footer"><!-- 页脚 -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="grid" class="ui-btn-active">查询</a></li>
+        <li><a href="#" data-icon="star">收藏</a></li>
+        <li><a href="#" data-icon="gear">设置</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div data-role="page" id="detail">
+
+  <div data-role="header" data-position="fixed">
+    <h1>090-jQM WebApp–列车时刻表</h1>
+  </div>
+
+  <div role="main" class="ui-content">
+    <h2></h2>
+    <table data-role="table" id="movie-table" data-mode="reflow" class="ui-responsive">
+      <thead>
+      <tr>
+        <th data-priority="1">站名</th>
+        <th data-priority="persist">到站时间</th>
+        <th data-priority="persist">出发时间</th>
+      </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <a href="#" class="ui-btn ui-corner-all" data-rel="back">返回</a>
+  </div>
+
+  <div data-role="footer">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#" data-icon="grid" class="ui-btn-active">查询</a></li>
+        <li><a href="#" data-icon="star">收藏</a></li>
+        <li><a href="#" data-icon="gear">设置</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
